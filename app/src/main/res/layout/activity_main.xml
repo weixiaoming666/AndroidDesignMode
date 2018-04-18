@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_tv_main"
+    tools:context="com.example.administrator.androiddesignmode.MainActivity">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="53dp"
+    android:text="目录"
+    android:gravity="center"
+    android:textSize="20sp"
+    android:alpha="0.3"
+    android:background="@drawable/tv_mainaty_shap"
+   />
+    <FrameLayout
+        android:id="@+id/fl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rlv_main_aty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </android.support.v7.widget.RecyclerView>
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_main"
+            android:layout_width="50dp"
+            android:layout_height="52dp"
+            android:layout_gravity="bottom|right"/>
+    </FrameLayout>
+
+
+</LinearLayout>

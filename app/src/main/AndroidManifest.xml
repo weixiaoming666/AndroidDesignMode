@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.administrator.androiddesignmode">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".sixrule.SixRuleActivity" />
+        <activity android:name=".singleton.SingletonAty" />
+        <activity android:name=".builder.BuilderAty" />
+        <activity android:name=".prototype.PrototypeAty" />
+        <activity android:name=".factorymethod.FactoryMethodAty" />
+        <activity android:name=".abstractfactory.AbstractFactory" />
+        <activity android:name=".strategy.StrategyAty" />
+        <activity android:name=".state.StateAty" />
+        <activity android:name=".chainofresponsibility.ChainOfResponsibilityAty" />
+        <activity android:name=".interpreter.InterpreterAty" />
+        <activity android:name=".command.CommandAty" />
+        <activity android:name=".observer.ObserverAty" />
+        <activity android:name=".memento.MementoAty" />
+        <activity android:name=".iterator.IteratorAty" />
+        <activity android:name=".mediator.MediatorAty" />
+        <activity android:name=".visitor.VisitorAty" />
+        <activity android:name=".agent.AgentAty" />
+        <activity android:name=".composite.CompositeAty" />
+        <activity android:name=".adapterpattern.AdapterAty" />
+        <activity android:name=".decorator.DecoratorAty" />
+        <activity android:name=".flyweight.FlyweightAty" />
+        <activity android:name=".bridge.BridgeAty" />
+        <activity android:name=".facade.FacadeAty" />
+        <activity android:name=".template.TemplateAty"></activity>
+    </application>
+
+</manifest>
