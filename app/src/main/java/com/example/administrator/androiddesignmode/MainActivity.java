@@ -1,6 +1,8 @@
 package com.example.administrator.androiddesignmode;
 
 import android.os.Bundle;
+import android.os.PersistableBundle;
+import android.support.annotation.Nullable;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.GridLayoutManager;
@@ -14,6 +16,7 @@ import android.widget.TextView;
 import com.example.administrator.androiddesignmode.abstractfactory.AbstractFactory;
 import com.example.administrator.androiddesignmode.adapterpattern.AdapterAty;
 import com.example.administrator.androiddesignmode.agent.AgentAty;
+import com.example.administrator.androiddesignmode.base.BaseAty;
 import com.example.administrator.androiddesignmode.base.RLVAdapterBase;
 import com.example.administrator.androiddesignmode.bridge.BridgeAty;
 import com.example.administrator.androiddesignmode.builder.BuilderAty;
@@ -43,7 +46,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends BaseAty {
     private RecyclerView recyclerView;
     private FloatingActionButton floatingActionButton;
     private ViewHolder holder;
@@ -55,6 +58,7 @@ public class MainActivity extends AppCompatActivity {
             "享元模式","桥接模式","外观模式"
     };
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -63,6 +67,7 @@ public class MainActivity extends AppCompatActivity {
         initView();
         initData();
         setListenter();
+
     }
 
     private void initData() {//跳转信息封装的entity 里面  业务逻辑更清晰
@@ -85,8 +90,6 @@ public class MainActivity extends AppCompatActivity {
         datas = Arrays.asList(stringsData);
         //直接使用baseAdapter 暴露操作 粘合ui和数据的方法 根据情况进行变换  也可以写一个类去继承base 然后在该类中操作（
         // 业务逻辑比较多的时候）
-
-
     }
     private int anInt =1;//用来切换模式的按钮
 //    切换视图中前五个变化延迟 是因为没有刷新界面 复用问题
@@ -116,7 +119,6 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
-
     //内部类 可以直接创建一个外部类   也可以在adapter 中直接创建内部类
   public static class ViewHolder extends RecyclerView.ViewHolder{
 
@@ -129,10 +131,6 @@ public class MainActivity extends AppCompatActivity {
             tv_content.setText(content);
         }
     }
-
-
-
-
     private void getEntitys(final List<PatternEntuty> entuties) {
         entuties.get(0).type = SixRuleActivity.class;//六大原则
         entuties.get(1).type = SingletonAty.class;//单例模式

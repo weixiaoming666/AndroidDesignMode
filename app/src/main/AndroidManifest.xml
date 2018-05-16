@@ -39,7 +39,9 @@
         <activity android:name=".flyweight.FlyweightAty" />
         <activity android:name=".bridge.BridgeAty" />
         <activity android:name=".facade.FacadeAty" />
-        <activity android:name=".template.TemplateAty"></activity>
+        <activity android:name=".template.TemplateAty" />
+        <activity android:name=".base.BaseAty" />
+        <activity android:name=".sixrule.SingleResponsibilityAty"></activity>
     </application>
 
 </manifest>

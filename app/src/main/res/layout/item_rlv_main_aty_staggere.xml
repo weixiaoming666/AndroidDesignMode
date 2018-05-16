@@ -19,8 +19,8 @@
         android:layout_height="41dp"
         android:gravity="center"
         android:textSize="16sp"
-        android:background="@drawable/bg_tv_content_main"
-        android:textColor="@color/colorPrimaryDark"
+        android:background="@drawable/item_main_bg"
+        android:textColor="@color/yellow"
         android:text="目录正在更新中"
         android:alpha="0.5"
 

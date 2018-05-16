@@ -4,5 +4,67 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bg_tv_main"
     tools:context="com.example.administrator.androiddesignmode.sixrule.SixRuleActivity">
+<ListView
+    android:alpha="0.9"
+    android:divider="@color/colorAccent"
+    android:dividerHeight="2dp"
+    android:id="@+id/lv_six_rule_aty"
+    android:layout_width="377dp"
+    android:layout_height="484dp"
+    android:layout_marginLeft="8dp"
+    app:layout_constraintLeft_toLeftOf="parent"
+    android:layout_marginRight="8dp"
+    app:layout_constraintRight_toRightOf="parent"
+    android:footerDividersEnabled="true"
+    android:overScrollFooter="@drawable/item_main_bg"
+    android:headerDividersEnabled="true"
+    app:layout_constraintHorizontal_bias="0.9"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    android:layout_marginTop="8dp"
+    app:layout_constraintVertical_bias="0.3">
+</ListView>
+    <!--
+    android:divider="@color/colorAccent" 列表间距颜色
+    android:dividerHeight="10dp" 列表间距
+    android:entries=""引用一个数组资源填充列表
+    android:footerDividersEnabled
+android:overScrollFooter="@drawable/bg_tv_content_main" 设置一个当滚动时或ListView未填满屏幕时能显示在ListView下方的Drawable
+    -->
+<Button
+    android:background="@color/colorPrimary"
+    android:text="增加 5 View"
+    android:layout_width="181dp"
+    android:layout_height="48dp"
+    android:onClick="addListView"
+    android:id="@+id/button_add"
+    android:layout_marginRight="8dp"
+    app:layout_constraintRight_toRightOf="parent"
+    android:layout_marginLeft="8dp"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent"
+    android:layout_marginBottom="8dp"
+    app:layout_constraintHorizontal_bias="0.0"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp" />
+    <Button
+        android:background="@color/colorPrimary"
+        android:onClick="delListView"
+        android:text="删除 5 view"
+        android:layout_width="184dp"
+        android:layout_height="50dp"
+        android:id="@+id/button_dell"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toRightOf="@+id/button_add"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
 </android.support.constraint.ConstraintLayout>

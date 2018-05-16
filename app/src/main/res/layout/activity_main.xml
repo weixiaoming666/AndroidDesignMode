@@ -7,13 +7,14 @@
     android:orientation="vertical"
     android:background="@drawable/bg_tv_main"
     tools:context="com.example.administrator.androiddesignmode.MainActivity">
-<TextView
+    <include layout="@layout/title_base_aty"/>
+    <TextView
     android:layout_width="match_parent"
     android:layout_height="53dp"
     android:text="目录"
     android:gravity="center"
     android:textSize="20sp"
-    android:alpha="0.3"
+    android:alpha="1"
     android:background="@drawable/tv_mainaty_shap"
    />
     <FrameLayout

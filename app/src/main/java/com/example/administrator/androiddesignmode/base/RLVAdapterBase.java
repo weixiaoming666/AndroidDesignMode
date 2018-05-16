@@ -13,6 +13,7 @@ import com.example.administrator.androiddesignmode.utills.ToastUtill;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.ResourceBundle;
 import java.util.zip.CheckedOutputStream;
 
 /**
@@ -74,5 +75,7 @@ public abstract class RLVAdapterBase<T> extends RecyclerView.Adapter<RecyclerVie
         notifyDataSetChanged();
     }
     public abstract void linkData2View(RecyclerView.ViewHolder holder, int position);//暴露出来给当前aty 处理数据
+
+
 
 }
