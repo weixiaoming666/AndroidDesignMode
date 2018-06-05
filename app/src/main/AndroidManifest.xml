@@ -41,7 +41,9 @@
         <activity android:name=".facade.FacadeAty" />
         <activity android:name=".template.TemplateAty" />
         <activity android:name=".base.BaseAty" />
-        <activity android:name=".sixrule.SingleResponsibilityAty"></activity>
+        <activity android:name=".sixrule.SingleResponsibilityAty" />
+        <activity android:name=".builder.eazytext.BuilderEazyAty" />
+        <activity android:name=".builder.systembuilder.SystemBuilderAty"></activity>
     </application>
 
 </manifest>

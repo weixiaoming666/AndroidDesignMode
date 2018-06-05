@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="datas">
+        <item>数据测试</item>
+        <item>真机测试</item>
+        <item>霸王别姬</item>
+        <item>爱情公寓</item>
+        <item>萝卜白菜</item>
+        <item>私家侦探</item>
+        <item>中华小当家</item>
+    </string-array>
+</resources>
